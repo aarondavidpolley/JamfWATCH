@@ -15,7 +15,7 @@
 #Near the end of the script will be a multi-use enrolment ID like the one seen below
 #Replace the one below with your invitation ID from the QuickAdd package
 #IMPORTANT: do not generate your QuickAdd package from the User Initiated Enrolment Page
-#This will give you a one time enrolment ID which will nto work for this use case
+#This will give you a one time enrolment ID which will not work for this use case
 #Only use an ID found in a recon generated QuickAdd package
 
 #Define Variables#
