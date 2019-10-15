@@ -36,7 +36,7 @@ InvitationIDinsert='InvitationID="56186073070322895268787070779579085172"'
 
 if [ ! -d "/private/var/db/JamfWATCH/LaunchDaemons/" ]; then
 
-	mkdir "/private/var/db/JamfWATCH/LaunchDaemons/"
+	mkdir -p "/private/var/db/JamfWATCH/LaunchDaemons/"
 	
 fi
 
@@ -112,7 +112,7 @@ chmod 644 /private/var/db/JamfWATCH/LaunchDaemons/com.github.aarondavidpolley.Ja
 
 if [ ! -d "/private/var/db/JamfWATCH/Scripts/" ]; then
 
-	mkdir "/private/var/db/JamfWATCH/Scripts/"
+	mkdir -p "/private/var/db/JamfWATCH/Scripts/"
 	
 fi
 
