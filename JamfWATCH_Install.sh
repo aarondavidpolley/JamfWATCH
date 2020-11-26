@@ -119,7 +119,6 @@ fi
 #Create Script#
 
 tee /private/var/db/JamfWATCH/Scripts/JamfWATCH.sh <<EOF
-
 #!/bin/bash
 
 #Define Variables
