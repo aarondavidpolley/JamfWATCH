@@ -2,7 +2,7 @@
 
 Jamf Pro WATCH Dog: Monitor and self heal Jamf Pro enrolment if framework is removed from a client computer
 
-Last tested with Jamf Pro 10.15.1 & macOS 10.15.0
+Last tested with Jamf Pro 10.20.1-t1584039255 & macOS 10.15.7
 
 Note: any devices re-enrolled via this method will NOT have user approved MDM (UAMDM) status automatically.  For best results use on macOS 10.12.6 endpoints or lower.
 
