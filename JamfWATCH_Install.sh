@@ -55,7 +55,7 @@ tee /private/var/db/JamfWATCH/LaunchDaemons/com.github.aarondavidpolley.JamfWATC
     </array>
     <key>WatchPaths</key>
     <array>
-       <string>/Library/Application Support/JAMF/</string>
+       <string>/Library/Application Support/JAMF/JAMF.keychain</string>
        <string>/usr/local/jamf/bin/jamf</string>
     </array>
 </dict>
