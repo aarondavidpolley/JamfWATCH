@@ -2,10 +2,9 @@
 
 Jamf Pro WATCH Dog: Monitor and self heal Jamf Pro enrolment if framework is removed from a client computer
 
-Last tested with Jamf Pro 10.20.1-t1584039255 & macOS 10.15.7
+Last tested with Jamf Pro 10.41.0-t1661887915 & macOS 12.6
 
-Note: any User Initiated Enrollment devices re-enrolled via this method will NOT have user approved MDM (UAMDM) status automatically.
-For best results use on macOS devices enrolled via Automated Device Enrollment AKA DEP
+Note: any User Initiated Enrollment devices re-enrolled via this method will NOT have user approved MDM (UAMDM) status automatically on macOS 10.15 or lower and will not have the MDM profile re-installed on macOS 11 or higher. For best results use on macOS devices enrolled via Automated Device Enrollment AKA DEP with MDM profile removal disabled.
 
 ## //How To Install//
 
@@ -27,7 +26,7 @@ Add the Install and Check script to your Jamf Pro Server and assign to polices a
 <br />#Note: make sure to edit between the "" quotes. Leave all other formatting intact
 <br />#Include port number in URL and do not use ending slash as per examples in the script
 
-### How to get Invitation ID?
+### How to get Invitation ID? OLD WAY
 
 <br />#On any macOS device, use the Jamf Recon.app to generate a quick add package with the
 <br />#correct settings for enrolment including management account, SSH settings, etc
@@ -37,6 +36,12 @@ Add the Install and Check script to your Jamf Pro Server and assign to polices a
 <br />#IMPORTANT: do not generate your QuickAdd package from the User Initiated Enrolment Page
 <br />#This will give you a one time enrolment ID which will not work for this use case
 <br />#Only use an ID found in a recon generated QuickAdd package
+
+### How to get Invitation ID? NEW WAY
+
+<br />As Recon is being deprecated in a future release of Jamf Pro I now suggest to use the API to get the ID.
+<br />Head to https://yourJAMFPROserver/classicapi/doc/#/computerinvitations/findComputerInvitations and authenticate to the swagger UI.
+<br />Use the "Try It Out" feature to get a list of invitiations.  Look for "invitation_type":"DEFAULT" and copy the long numeric "invitation" string before it.
 
 
 ## //Check Script//
